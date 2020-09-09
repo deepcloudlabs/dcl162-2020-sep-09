@@ -56,6 +56,7 @@ class Account:
             self._balance = self._balance + amount
 
     def withdraw(self, amount):
+        print("Account::withdraw() is running...")
         if amount <= 0:  # validation
             raise ValueError("amount must be positive")
         if amount > self._balance:  # business rule
@@ -87,6 +88,7 @@ class CheckingAccount(Account):
 
     # overriding
     def withdraw(self, amount):
+        print("CheckingAccount::withdraw() is running...")
         if amount <= 0:  # validation
             raise ValueError("amount must be positive")
         if amount > (self.balance + self._overdraft_amount):  # business rule

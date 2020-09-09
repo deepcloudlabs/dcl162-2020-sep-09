@@ -1,15 +1,20 @@
-from banking.domain import Account
+from banking.domain import Account, CheckingAccount
 
-accounts = [
+accounts = [ # heterogeneous list
     Account("tr1", 10000),
-    Account("tr2", 20000),
+    CheckingAccount("tr2", 20000, 1000),
     Account("tr3", 30000),
-    Account("tr4", 40000),
+    CheckingAccount("tr4", 40000, 10000),
     Account("tr5", 50000)
 ]
 
-total_balance = 0
-for account in accounts:
-    account.withdraw(10)  # withdraw(account, 10)
-    total_balance += account.balance
-print(f"Total balance: {total_balance}")
+
+def get_total_balance(accs):  # generic function
+    total_balance = 0
+    for account in accs:
+        account.withdraw(1)  # withdraw(account, 10)
+        total_balance += account.balance
+    return total_balance
+
+
+print(f"Total balance: {get_total_balance(accounts)}")
