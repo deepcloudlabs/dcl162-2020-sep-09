@@ -6,17 +6,21 @@ class InsufficientBalance(Exception):
         self.message = message
         self.deficit = deficit
 
+
 class AccountStatus(Enum):
     CLOSED = 100
     ACTIVE = 200
     BLOCKED = 300
 
+
 """
     Account is a domain (analysis) class
     Account is an entity class => class with identity
 """
+
+
 class Account:
-    def __init__(self, iban, balance=10,status= AccountStatus.ACTIVE):
+    def __init__(self, iban, balance=10, status=AccountStatus.ACTIVE):
         self._iban = iban
         self._balance = balance
         self._status = status
@@ -85,10 +89,10 @@ class CheckingAccount(Account):
     def withdraw(self, amount):
         if amount <= 0:  # validation
             raise ValueError("amount must be positive")
-        if amount > (self._balance + self._overdraft_amount):  # business rule
+        if amount > (self.balance + self._overdraft_amount):  # business rule
             raise InsufficientBalance("your balance does not cover your expenses",
-                                      amount - self._balance - self._overdraft_amount)
-        self._balance = self._balance - amount
+                                      amount - self.balance - self._overdraft_amount)
+        self._balance = self.balance - amount
 
     # overriding
     def __str__(self):  # str(x)
