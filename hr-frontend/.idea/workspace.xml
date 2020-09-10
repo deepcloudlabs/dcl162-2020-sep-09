@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eaf275d4-b854-468f-95e3-6c33ad1dd58e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/binance-backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-backend/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/binance-frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/toastr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/js/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/js/monitor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/resources/translation-en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../binance-frontend/resources/translation-tr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/module10-writing.api.with.flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/module10-writing.api.with.flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module10-writing.api.with.flask/make-websocket-binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/../module10-writing.api.with.flask/make-websocket-binance.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1h0J7ZX01wUAYKVW1oMgaAZwSRn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/home/courseware/DCL/programming/DCL-162.advanced.python.programming/labs/module04-file.operations" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DEVEL\stage\tmp\dcl162-2020-sep-02\hr-frontend\js\lib" />
+      <recent name="C:\DEVEL\stage\tmp\dcl162-2020-sep-02\hr-frontend\js" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eaf275d4-b854-468f-95e3-6c33ad1dd58e" name="Default Changelist" comment="" />
+      <created>1561530922627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561530922627</updated>
+      <workItem from="1561530923778" duration="14858000" />
+      <workItem from="1571907026184" duration="4786000" />
+      <workItem from="1599141914602" duration="10211000" />
+      <workItem from="1599198748938" duration="1403000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1599155115338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599155115338</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="585" y="106" key="CommitChangelistDialog2" timestamp="1599155113710">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="106" key="CommitChangelistDialog2/0.0.1920.1040/8.-1080.1920.1040@0.0.1920.1040" timestamp="1599155113710" />
+    <state x="748" y="-806" key="FileChooserDialogImpl" timestamp="1599187770964">
+      <screen x="8" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/8.-1080.1920.1040@0.0.1920.1040" timestamp="1599162639226" />
+    <state x="748" y="-806" key="FileChooserDialogImpl/0.0.1920.1040/8.-1080.1920.1040@8.-1080.1920.1040" timestamp="1599187770964" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1599155117851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/8.-1080.1920.1040@0.0.1920.1040" timestamp="1599155117851" />
+  </component>
+</project>
