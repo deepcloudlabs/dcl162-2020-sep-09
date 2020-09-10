@@ -3,5 +3,6 @@ def extract_employee_from_request(request,fields):
     for field in fields:
         if field in request.json:
             emp[field] = request.json[field]
-    emp["_id"] = emp["identity"]
+    if "identity" in emp:
+        emp["_id"] = emp["identity"]
     return emp
