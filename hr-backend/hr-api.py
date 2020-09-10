@@ -1,5 +1,5 @@
 import json
-
+from hr.utility import extract_employee_from_request
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from pymongo import MongoClient
@@ -28,18 +28,16 @@ def getEmployeeByIdentity(identity):
 def getEmployees():
     return json.dumps([emp for emp in employees.find({})])
 
+
 """
 set c:\DEVEL\stage\opt\curl-7.45.0\bin;%PATH%
 curl -X POST http://localhost:4400/hr/api/v1/employees -H "Content-Type: application/json" -H "Accept: application/json" -d "{\"identity\": \"1\", \"fullName\": \"jack bauer\", \"iban\": \"tr1\", \"photo\" : null, \"birthYear\": 1956, \"salary\": 100000, \"department\": \"IT\", \"fulltime\": true}"
 """
+
+
 @app.route("/hr/api/v1/employees", methods=["POST"])
 def addEmployee():
-    emp = {}
-    for field in fields:
-        if field in request.json:
-            emp[field] = request.json[field]
-    emp["_id"] = emp["identity"]
-    employees.insert_one(emp)
+    employees.insert_one(extract_employee_from_request(request, fields))
     return jsonify({"status": "ok"})
 
 
