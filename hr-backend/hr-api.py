@@ -1,6 +1,6 @@
 import json
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from pymongo import MongoClient
 
@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 cors = CORS(app)
 
-fields = ["identity", "fullName", "iban", "photo", "birthYear", "salary", "department", "fulltime" ]
+fields = ["identity", "fullName", "iban", "photo", "birthYear", "salary", "department", "fulltime"]
 
 client = MongoClient("mongodb://localhost:27017")
 
@@ -22,10 +22,24 @@ employees = hr_db.employees  # employees collection
 def getEmployeeByIdentity(identity):
     return jsonify(employees.find_one({"identity": identity}))
 
+
 # http://localhost:4400/hr/api/v1/employees
 @app.route("/hr/api/v1/employees", methods=["GET"])
 def getEmployees():
     return json.dumps([emp for emp in employees.find({})])
+
+"""
+curl -X POST http://localhost:4400/hr/api/v1/employees -H "Content-Type: application/json" -H "Accept: application/json" -d "{\"identity\": \"1\", \"fullName\": \"jack bauer\", \"iban\": \"tr1\", \"photo\" : null, \"birthYear\": 1956, \"salary\": 100000, \"department\": \"IT\", \"fulltime\": true}"
+"""
+@app.route("/hr/api/v1/employees", methods=["POST"])
+def addEmployee():
+    emp = {}
+    for field in fields:
+        if field in request.json:
+            emp[field] = request.json[field]
+    emp["_id"] = emp["identity"]
+    employees.insert_one(emp)
+    return jsonify({"status": "ok"})
 
 
 app.run(host="localhost", port=4400)
