@@ -1,20 +1,23 @@
 class Employee {
     constructor() {
-        this.identity = ko.observable('')
+        this.identity = ko.observable('');
+          /*
             .extend({
                 required: true,
                 tcKimlikNo: true
             });
+
+           */
         this.fullName = ko.observable("")
             .extend({
                 required: true,
                 minLength: 5
             });
-        this.iban = ko.observable('TR')
-            .extend({
+        this.iban = ko.observable('TR');
+            /*.extend({
                 required: true,
                 iban: true
-            });
+            });*/
         this.photo = ko.observable(toSrcImage(AppConfig.NO_IMAGE));
         this.birthYear = ko.observable(1990);
         this.salary = ko.observable(20000)

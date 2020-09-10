@@ -2,40 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf275d4-b854-468f-95e3-6c33ad1dd58e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/binance-backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-backend/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/binance-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/css/toastr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/js/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/js/monitor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/resources/translation-en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../binance-frontend/resources/translation-tr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/module10-writing.api.with.flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../module10-writing.api.with.flask/.idea/module10-writing.api.with.flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module10-writing.api.with.flask/make-websocket-binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/../module10-writing.api.with.flask/make-websocket-binance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module02-functional.programming.in.python/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module02-functional.programming.in.python/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module02-functional.programming.in.python/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module02-functional.programming.in.python/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module02-functional.programming.in.python/.idea/module02-functional.programming.in.python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module02-functional.programming.in.python/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module02-functional.programming.in.python/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module03-unit.testing.using.pytest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module03-unit.testing.using.pytest/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module03-unit.testing.using.pytest/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module03-unit.testing.using.pytest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module03-unit.testing.using.pytest/.idea/module03-unit.testing.using.pytest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module03-unit.testing.using.pytest/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module03-unit.testing.using.pytest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module07-mysql.programming.in.python/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module07-mysql.programming.in.python/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module07-mysql.programming.in.python/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module07-mysql.programming.in.python/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module07-mysql.programming.in.python/.idea/module07-mysql.programming.in.python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module07-mysql.programming.in.python/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module07-mysql.programming.in.python/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/module08-mongodb.programming.using.pymongo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/hr-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/hr-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/hr.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/home/courseware/DCL/programming/DCL-162.advanced.python.programming/labs/module04-file.operations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -88,6 +84,7 @@
       <workItem from="1571907026184" duration="4786000" />
       <workItem from="1599141914602" duration="10211000" />
       <workItem from="1599198748938" duration="1403000" />
+      <workItem from="1599742953064" duration="537000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1599155115338</created>
