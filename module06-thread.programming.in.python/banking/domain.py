@@ -1,4 +1,5 @@
 from enum import Enum
+from threading import Lock
 
 
 class InsufficientBalance(Exception):
@@ -19,56 +20,64 @@ class AccountStatus(Enum):
 """
 
 
-class Account:
+class Account:  # Thread-safe Account
     def __init__(self, iban, balance=10, status=AccountStatus.ACTIVE):
         self._iban = iban
         self._balance = balance
         self._status = status
+        self.lck = Lock()
 
     # iban -> property : read-write
     @property
     def iban(self):
-        return self._iban
+        with self.lck:
+            return self._iban
 
     @property  # read-only property
     def balance(self):
-        print("def balance(self) is running...")
-        return self._balance
+        with self.lck:
+            print("def balance(self) is running...")
+            return self._balance
 
     @iban.setter
     def iban(self, iban):
-        # validation
-        if True:
+        with self.lck:
             self._iban = iban
 
     @property
     def status(self):
-        return self._status
+        with self.lck:
+            return self._status
 
     @status.setter
     def status(self, status):
-        self._status = status
+        with self.lck:
+            self._status = status
 
     def deposit(self, amount=5):
-        if amount <= 0:  # validation
-            raise ValueError("amount must be positive")
-        if self._status == AccountStatus.ACTIVE:
-            self._balance = self._balance + amount
+        with self.lck:
+            if amount <= 0:  # validation
+                raise ValueError("amount must be positive")
+            if self._status == AccountStatus.ACTIVE:
+                self._balance = self._balance + amount
 
     def withdraw(self, amount):
-        print("Account::withdraw() is running...")
-        if amount <= 0:  # validation
-            raise ValueError("amount must be positive")
-        if amount > self._balance:  # business rule
-            raise InsufficientBalance("your balance does not cover your expenses", amount - self._balance)
-        if self._status == AccountStatus.ACTIVE:
-            self._balance = self._balance - amount
+        with self.lck:
+            print("Account::withdraw() is running...")
+            if amount <= 0:  # validation
+                raise ValueError("amount must be positive")
+            if amount > self._balance:  # business rule
+                raise InsufficientBalance("your balance does not cover your expenses", amount - self._balance)
+            if self._status == AccountStatus.ACTIVE:
+                self._balance = self._balance - amount
 
     def __str__(self):  # str(x)
-        return f"Account [iban: {self.iban}, balance: {self.balance}, status: {self.status}]"
+        with self.lck:
+            return f"Account [iban: {self.iban}, balance: {self.balance}, status: {self.status}]"
 
     def __repr__(self):  # repr(x)
-        return self._iban
+        with self.lck:
+            return self._iban
 
 
 """
@@ -84,18 +93,21 @@ class CheckingAccount(Account):
 
     @property
     def overdraft_amount(self):
-        return self._overdraft_amount
+        with self.lck:
+            return self._overdraft_amount
 
     # overriding
     def withdraw(self, amount):
-        print("CheckingAccount::withdraw() is running...")
-        if amount <= 0:  # validation
-            raise ValueError("amount must be positive")
-        if amount > (self.balance + self._overdraft_amount):  # business rule
-            raise InsufficientBalance("your balance does not cover your expenses",
-                                      amount - self.balance - self._overdraft_amount)
-        self._balance = self.balance - amount
+        with self.lck:
+            print("CheckingAccount::withdraw() is running...")
+            if amount <= 0:  # validation
+                raise ValueError("amount must be positive")
+            if amount > (self.balance + self._overdraft_amount):  # business rule
+                raise InsufficientBalance("your balance does not cover your expenses",
+                                          amount - self.balance - self._overdraft_amount)
+            self._balance = self.balance - amount
 
     # overriding
     def __str__(self):  # str(x)
-        return f"CheckingAccount [iban: {self.iban}, balance: {self.balance}, status: {self.status}, overdraftAmount: {self.overdraft_amount}]"
+        with self.lck:
+            return f"CheckingAccount [iban: {self.iban}, balance: {self.balance}, status: {self.status}, overdraftAmount: {self.overdraft_amount}]"
