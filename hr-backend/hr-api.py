@@ -1,4 +1,7 @@
 import json
+
+from flask_socketio import SocketIO
+
 from hr.utility import extract_employee_from_request
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -8,6 +11,8 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 cors = CORS(app)
 
+socketio = SocketIO(app, cors_allowed_origins="*")
+
 fields = ["identity", "fullName", "iban", "photo", "birthYear", "salary", "department", "fulltime"]
 
 client = MongoClient("mongodb://localhost:27017")
@@ -16,6 +21,11 @@ hr_db = client['hr']  # hr database
 
 employees = hr_db.employees  # employees collection
 
+# http/2 -> SSE (Server Sent Event), Text-Based
+
+@socketio.on('message')
+def handle_message(msg):
+    print(f"received message: {msg}")
 
 # http://localhost:4400/hr/api/v1/employees/1
 @app.route("/hr/api/v1/employees/<identity>", methods=["GET"])
@@ -41,7 +51,9 @@ curl -X DELETE http://localhost:4400/hr/api/v1/employees/2 -H "Accept: applicati
 
 @app.route("/hr/api/v1/employees", methods=["POST"])
 def addEmployee():
-    employees.insert_one(extract_employee_from_request(request, fields))
+    emp = extract_employee_from_request(request, fields)
+    employees.insert_one(emp)
+    socketio.emit("hire", emp )
     return jsonify({"status": "ok"})
 
 
@@ -61,7 +73,8 @@ def updateEmployee(identity):
 def removeEmployee(identity):
     employee = employees.find_one({"_id": identity})
     employees.delete_one({"_id": identity})
+    socketio.emit("fire", employee )
     return jsonify(employee)
 
 
-app.run(host="localhost", port=4400)
+socketio.run(app, port=4400)
