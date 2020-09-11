@@ -15,10 +15,11 @@ def draw_lottery_numbers(max, size):
 
 threads = []
 
-for i in range(0, 10000):
-    threads.append(Thread(target=draw_lottery_numbers, args=(49, 6)))
-for thread in threads:
+for i in range(0, 10000): # Stack Size 1MBe =  => 10 GB
+    thread = Thread(target=draw_lottery_numbers, args=(49, 6))
+    threads.append(thread)
     thread.start()
+
 for thread in threads:
     thread.join()
 print(f"{len(lottery_numbers)}")
