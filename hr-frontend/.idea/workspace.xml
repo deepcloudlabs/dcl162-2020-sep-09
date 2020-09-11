@@ -30,9 +30,7 @@
       <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/module08-mongodb.programming.using.pymongo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../module08-mongodb.programming.using.pymongo/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hr-backend/hr-api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../hr-backend/hr-api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/hr.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,7 @@
       <workItem from="1571907026184" duration="4786000" />
       <workItem from="1599141914602" duration="10211000" />
       <workItem from="1599198748938" duration="1403000" />
-      <workItem from="1599742953064" duration="2733000" />
+      <workItem from="1599742953064" duration="3250000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1599155115338</created>
