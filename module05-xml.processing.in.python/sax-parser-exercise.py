@@ -35,7 +35,9 @@ if __name__ == '__main__':
     parser = xml.sax.make_parser()
     handler = CountryHandler()
     parser.setContentHandler(handler)
+    # parsing+processing
     parser.parse("resources/countries.xml")
-    sorted_countries = sorted(handler.countries, key=lambda ctry : int(ctry.population), reverse=True)
+    # i have the solution in sorted_countries
+    sorted_countries = sorted(handler.countries, key=lambda ctry: int(ctry.population), reverse=True)
     for country in sorted_countries:
         print(country)
